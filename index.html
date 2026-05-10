@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="hero__title">JASMINE</h1>
+            <p class="hero__tagline">Great Taste for Great Feeling</p>
+            <p class="hero__hours">Opening Hours • 12 PM - 06 PM</p>
+            <a
+              href="https://wa.me/628XXXXXXXXXX?text=Saya%20ingin%20order%20dessert"
+              class="button button--primary"
+              >Order via WhatsApp</a
+            >
+          </div>
+          <div class="hero__media">
+            <img src="images/hero.jpg" alt="Jasmine drink" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="featured-menu">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Best Seller</h2>
+            <p class="section-description">
+              Customer favorite drinks and desserts
+            </p>
+          </div>
+
+          <div class="featured-menu__grid">
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="images/menu1.jpg" alt="Choco Melt Cup" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Choco Melt Cup</h3>
+                <p class="product-card__description">
+                  Coklat lumer, manisnya pas
+                </p>
+                <p class="product-card__price">Rp25.000</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="images/menu2.jpg" alt="Strawberry Milk" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Strawberry Milk</h3>
+                <p class="product-card__description">
+                  Fresh + creamy + sedikit asam
+                </p>
+                <p class="product-card__price">Rp22.000</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="images/menu3.jpg" alt="Matcha Soft Cream" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Matcha Soft Cream</h3>
+                <p class="product-card__description">
+                  Matcha premium, lembut banget
+                </p>
+                <p class="product-card__price">Rp27.000</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="images/menu4.jpg" alt="Strawberry Milk" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Strawberry Milk</h3>
+                <p class="product-card__description">
+                  Fresh + creamy + sedikit asam
+                </p>
+                <p class="product-card__price">Rp22.000</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="full-menu">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Full Menu</h2>
+
+            <p class="section-description">Explore all drinks and foods</p>
+          </div>
+
+          <div class="menu-category-grid">
+            <article class="menu-category">
+              <h3 class="menu-category__title">Coffee</h3>
+              <ul class="menu-category__list">
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name"
+                      >Jasmine Coffee (kopi susu)</span
+                    >
+                    <span class="menu-item__price">10k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Berry Americano</span>
+                    <span class="menu-item__price">10k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Coffee Mocca</span>
+                    <span class="menu-item__price">12k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Coffee Chocolate</span>
+                    <span class="menu-item__price">12k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Coffee Vanilla</span>
+                    <span class="menu-item__price">12k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Coffee Brown Sugar</span>
+                    <span class="menu-item__price">13k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Coffee Milo (kopmil)</span>
+                    <span class="menu-item__price">13k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Coffee Caramel Latte</span>
+                    <span class="menu-item__price">13k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Salted Caramel</span>
+                    <span class="menu-item__price">15k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Butterscotch</span>
+                    <span class="menu-item__price">15k</span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-category">
+              <h3 class="menu-category__title">Milk Boba</h3>
+              <ul class="menu-category__list">
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Chocolate</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Choco Caramel</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Choco Belgian</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Greentea</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Tiramisu</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Taro</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Red Velvet</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Vanilla Ori</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Mango</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Strawberry</span>
+                    <span class="menu-item__price">10k / 5k</span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-category">
+              <h3 class="menu-category__title">Mocktail</h3>
+              <ul class="menu-category__list">
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Rainbow Mocktail</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Sunrise Mocktail</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Mango Squash</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Orange Sky</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Blue Blood</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Blue Lagoon</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Lychee Squash</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Summer Ocean</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Sweety Mocktail</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-category">
+              <h3 class="menu-category__title">Special Matcha</h3>
+              <ul class="menu-category__list">
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Matcha Latte</span>
+                    <span class="menu-item__price">12k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Strawberry Matcha</span>
+                    <span class="menu-item__price">15k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Matcha Presso</span>
+                    <span class="menu-item__price">15k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Matcha Caramel</span>
+                    <span class="menu-item__price">15k</span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-category">
+              <h3 class="menu-category__title">Food's</h3>
+              <ul class="menu-category__list">
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Beef Burger Patties</span>
+                    <span class="menu-item__price">12k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name"
+                      >Sandwich ( Telur + Beef)</span
+                    >
+                    <span class="menu-item__price">10k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Sandwich Telur</span>
+                    <span class="menu-item__price">7k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Sandwich Beef</span>
+                    <span class="menu-item__price">6k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Roti Bakar</span>
+                    <span class="menu-item__price">4k</span>
+                  </div>
+                  <ul class="menu-item__variants">
+                    <li>
+                      <span><i>Coklat/Tiramisu/Taro</i></span>
+                    </li>
+                    <li>
+                      <span><i>Greentea/Strawberry</i></span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Kebab Beef Patties</span>
+                    <span class="menu-item__price">13k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Kebab (Telur + Beef)</span>
+                    <span class="menu-item__price">10k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Kebab Telur</span>
+                    <span class="menu-item__price">8k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Kebab Beef</span>
+                    <span class="menu-item__price">7k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Kebab Manis</span>
+                    <span class="menu-item__price">6k</span>
+                  </div>
+                  <ul class="menu-item__variants">
+                    <li>
+                      <span><i>Coklat/Tiramisu/Taro</i></span>
+                    </li>
+                    <li>
+                      <span><i>Greentea/Strawberry</i></span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Mie Padeh ( lv. 1/2)</span>
+                    <span class="menu-item__price">14k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Mie Padeh (lv. 3)</span>
+                    <span class="menu-item__price">15k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name">Mie Padeh (lv. 4/5)</span>
+                    <span class="menu-item__price">16k</span>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item__main">
+                    <span class="menu-item__name"
+                      >Topping Beef / Chicken Patties</span
+                    >
+                    <span class="menu-item__price">+5k</span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Why Choose Us</h2>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="feature-card__icon">🎂</div>
+              <h3 class="feature-card__title">Fresh Everyday</h3>
+              <p class="feature-card__description">Dibuat fresh setiap hari</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__icon">🍓</div>
+              <h3 class="feature-card__title">Quality</h3>
+              <p class="feature-card__description">Bahan Premium</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__icon">🚚</div>
+              <h3 class="feature-card__title">Shipping</h3>
+              <p class="feature-card__description">Pengiriman Cepat</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="store-location">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Our Store</h2>
+          </div>
+
+          <div class="store-location__content">
+            <div class="store-location__map">
+              <img src="images/location.png" alt="location" />
+            </div>
+            <div class="store-location__info">
+              <h3 class="store-location__name">Jasmine Koto Hilalang</h3>
+              <p class="store-location__address">
+                Kapalo Hilalang, Kec. 2 X 11 Kayu Tanam, Kabupaten Padang
+                Pariaman, Sumatera Barat
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-media">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Follow us on Instagram</h2>
+          </div>
+          <div class="social-media__embed">@the.jas.mine_</div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta__content">
+            <h2 class="cta__title">Pengen naikin mood?</h2>
+            <p class="cta__description">Pesan sekarang</p>
+            <a
+              href="https://wa.me/628XXXXXXXXXX?text=Saya%20ingin%20order%20dessert"
+              class="button button--primary"
+              >Order via WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <p>
+            Copyright &copy; 2026 ❤️ JASMINE - Great Taste for Great Feeling
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
