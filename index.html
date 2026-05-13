@@ -3,35 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jasmine</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Jasmine cafe serving fresh drinks, coffee, matcha, desserts, and snacks in Koto Hilalang."
+    />
+    <meta name="theme-color" content="#f3f1eb" />
+
+    <link rel="icon" href="icons/favicon.png" type="images/png" />
+    <title>Jasmine | Fresh Drink & Better Mood</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <div class="hero__content">
-          <div class="hero__text">
-            <h1 class="hero__title">JASMINE</h1>
-            <p class="hero__tagline">Great Taste for Great Feeling</p>
-            <p class="hero__hours">Opening Hours • 12 PM - 06 PM</p>
-            <a
-              href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
-              class="button button--primary"
-              >Order via WhatsApp</a
-            >
-          </div>
-          <div class="hero__media">
-            <img src="images/hero.jpg" alt="Jasmine drink" />
-          </div>
-        </div>
-      </div>
-    </header>
+    <!-- <header class="site-header"><nav></nav></header> -->
 
     <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__title">JASMINE</h1>
+              <p class="hero__tagline">Great Taste for Great Feeling</p>
+              <p class="hero__hours">Opening Hours • 12 PM - 06 PM</p>
+              <a
+                href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
+                class="button button--primary"
+                target="_blank"
+                rel="nooperner noreferrer"
+                aria-label="Order via WhatsApp"
+                >Order via WhatsApp</a
+              >
+            </div>
+            <div class="hero__media">
+              <img
+                src="images/hero.webp"
+                alt="Two signature drinks from Jasmine cafe"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="featured-menu">
         <div class="container">
           <div class="section-heading">
@@ -44,7 +63,11 @@
           <div class="featured-menu__grid">
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu1.jpg" alt="Americano Berry" />
+                <img
+                  src="images/menu1.webp"
+                  alt="Americano Berry iced coffee"
+                  loading="lazy"
+                />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Americano Berry</h3>
@@ -57,7 +80,12 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu2.jpg" alt="Matcha" />
+                <img
+                  src="images/menu2.webp"
+                  alt="Creamy Matcha"
+                  loading="lazy"
+                  loading="lazy"
+                />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Matcha</h3>
@@ -70,7 +98,11 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu3.jpg" alt="Coffee Butterscotch" />
+                <img
+                  src="images/menu3.webp"
+                  alt="Creamy Coffee Butterscotch"
+                  loading="lazy"
+                />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Coffee Butterscotch</h3>
@@ -83,7 +115,7 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu4.jpg" alt="Mie Padeh" />
+                <img src="images/menu4.webp" alt="Mie Padeh" loading="lazy" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Mie Padeh</h3>
@@ -96,7 +128,7 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu5.jpg" alt="Sandwich" />
+                <img src="images/menu5.webp" alt="Sandwich" loading="lazy" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Sandwich</h3>
@@ -109,7 +141,7 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu6.jpg" alt="Kebab" />
+                <img src="images/menu6.webp" alt="Kebab" loading="lazy" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Kebab</h3>
@@ -477,21 +509,21 @@
 
           <div class="features-grid">
             <article class="feature-card">
-              <div class="feature-card__icon">🎂</div>
+              <div class="feature-card__icon" aria-hidden="true">🎂</div>
               <h3 class="feature-card__title">Fresh Everyday</h3>
               <p class="feature-card__description">
                 Diracik langsung saat kamu order
               </p>
             </article>
             <article class="feature-card">
-              <div class="feature-card__icon">🍓</div>
+              <div class="feature-card__icon" aria-hidden="true">🍓</div>
               <h3 class="feature-card__title">Quality</h3>
               <p class="feature-card__description">
                 Kaya rasa dengan bahan pilihan
               </p>
             </article>
             <article class="feature-card">
-              <div class="feature-card__icon">🚚</div>
+              <div class="feature-card__icon" aria-hidden="true">🚚</div>
               <h3 class="feature-card__title">Shipping</h3>
               <p class="feature-card__description">
                 Cepat sampai sebelum esnya cair
@@ -509,13 +541,20 @@
 
           <div class="store-location__content">
             <div class="store-location__map">
-              <img src="images/location.jpg" alt="location" />
+              <img
+                src="images/location.webp"
+                alt="Jasmine cafe location in Koto Hilalang"
+                loading="lazy"
+              />
             </div>
             <div class="store-location__info">
               <h3 class="store-location__name">Jasmine Koto Hilalang</h3>
               <a
                 href="https://maps.app.goo.gl/TW7x9LLUQFuWMwoSA"
                 class="store-location__address"
+                target="_blank"
+                rel="nooperner noreferrer"
+                aria-label="Order via WhatsApp"
               >
                 Kapalo Hilalang, Kec. 2 X 11 Kayu Tanam, Kabupaten Padang
                 Pariaman, Sumatera Barat
@@ -531,7 +570,13 @@
             <h2 class="section-title">Follow us on Instagram</h2>
           </div>
           <div class="social-media__embed">
-            <a href="https://www.instagram.com/the.jas.mine_">@the.jas.mine_</a>
+            <a
+              href="https://www.instagram.com/the.jas.mine_"
+              target="_blank"
+              rel="nooperner noreferrer"
+              aria-label="Order via WhatsApp"
+              >@the.jas.mine_</a
+            >
           </div>
         </div>
       </section>
@@ -546,6 +591,9 @@
             <a
               href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
               class="button button--primary"
+              target="_blank"
+              rel="nooperner noreferrer"
+              aria-label="Order via WhatsApp"
               >Order via WhatsApp</a
             >
           </div>
