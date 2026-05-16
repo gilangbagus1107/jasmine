@@ -9,7 +9,7 @@
     />
     <meta name="theme-color" content="#f3f1eb" />
 
-    <link rel="icon" href="icons/favicon.png" type="images/png" />
+    <link rel="icon" href="icons/favicon.png" type="image/png" />
     <title>Jasmine | Fresh Drink & Better Mood</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -22,21 +22,57 @@
     />
   </head>
   <body>
-    <!-- <header class="site-header"><nav></nav></header> -->
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__content">
+          <a href="#" class="site-header__logo">JASMINE</a>
+
+          <nav class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+              <li>
+                <a href="#menu" class="site-nav__link">Menu</a>
+              </li>
+
+              <li>
+                <a href="#location" class="site-nav__link">Location</a>
+              </li>
+
+              <li>
+                <a href="#instagram" class="site-nav__link">Instagram</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a
+            href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
+            class="site-header__cta"
+          >
+            Order
+          </a>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
         <div class="container">
           <div class="hero__content">
             <div class="hero__text">
+              <p class="hero__eyebrow">Fresh Drink • Better Mood</p>
               <h1 class="hero__title">JASMINE</h1>
-              <p class="hero__tagline">Great Taste for Great Feeling</p>
-              <p class="hero__hours">Opening Hours • 12 PM - 06 PM</p>
+              <div class="hero__tagline">
+                <p>Coffee / Milk / Mocktail</p>
+                <p>Great Taste for Great Feeling</p>
+              </div>
+              <div class="hero__hours">
+                <p>Opening Hours • 12 PM - 06 PM</p>
+              </div>
+              <div class="hero__divider"></div>
               <a
                 href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
                 class="button button--primary"
                 target="_blank"
-                rel="nooperner noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Order via WhatsApp"
                 >Order via WhatsApp</a
               >
@@ -70,11 +106,11 @@
                 />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Americano Berry</h3>
+                <h3 class="product-card__title">Coffee Chocolate</h3>
                 <p class="product-card__description">
-                  Fresh berry dengan hint kopi yang ringan
+                  Fresh Chocolate dengan hint kopi yang ringan
                 </p>
-                <p class="product-card__price">Rp10.000</p>
+                <p class="product-card__price">Rp12.000</p>
               </div>
             </article>
 
@@ -84,15 +120,14 @@
                   src="images/menu2.webp"
                   alt="Creamy Matcha"
                   loading="lazy"
-                  loading="lazy"
                 />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Matcha</h3>
+                <h3 class="product-card__title">Blue Lagoon</h3>
                 <p class="product-card__description">
-                  Matcha premium dengan rasa creamy yang halus
+                  Sensasi kesegaran tropis dalam setiap tegukan
                 </p>
-                <p class="product-card__price">Rp12.000</p>
+                <p class="product-card__price">Rp8.000</p>
               </div>
             </article>
 
@@ -105,11 +140,12 @@
                 />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Coffee Butterscotch</h3>
+                <h3 class="product-card__title">Tiramisu</h3>
                 <p class="product-card__description">
-                  Manis creamy dengan aroma kopi yang lembut
+                  Creamy tiramisu dengan sensasi manis, pahit dan kenyal jadi
+                  satu
                 </p>
-                <p class="product-card__price">Rp15.000</p>
+                <p class="product-card__price">Rp10.000</p>
               </div>
             </article>
 
@@ -155,7 +191,7 @@
         </div>
       </section>
 
-      <section class="full-menu">
+      <!-- <section class="full-menu" id="menu">
         <div class="container">
           <div class="section-heading">
             <h2 class="section-title">Full Menu</h2>
@@ -499,7 +535,7 @@
             </article>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="features">
         <div class="container">
@@ -509,33 +545,27 @@
 
           <div class="features-grid">
             <article class="feature-card">
-              <div class="feature-card__icon" aria-hidden="true">🎂</div>
               <h3 class="feature-card__title">Fresh Everyday</h3>
+              <p class="feature-card__description">Made when you order</p>
+            </article>
+            <article class="feature-card">
+              <h3 class="feature-card__title">Carefully Crafted</h3>
               <p class="feature-card__description">
-                Diracik langsung saat kamu order
+                Balanced flavor in every drink
               </p>
             </article>
             <article class="feature-card">
-              <div class="feature-card__icon" aria-hidden="true">🍓</div>
-              <h3 class="feature-card__title">Quality</h3>
-              <p class="feature-card__description">
-                Kaya rasa dengan bahan pilihan
-              </p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-card__icon" aria-hidden="true">🚚</div>
-              <h3 class="feature-card__title">Shipping</h3>
-              <p class="feature-card__description">
-                Cepat sampai sebelum esnya cair
-              </p>
+              <h3 class="feature-card__title">Better Experience</h3>
+              <p class="feature-card__description">Fast service, better mood</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="store-location">
+      <section class="store-location" id="location">
         <div class="container">
           <div class="section-heading">
+            <p class="section-eyebrow">Visit Our Space</p>
             <h2 class="section-title">Our Store</h2>
           </div>
 
@@ -549,11 +579,14 @@
             </div>
             <div class="store-location__info">
               <h3 class="store-location__name">Jasmine Koto Hilalang</h3>
+              <p class="store-location__caption">
+                Fresh drinks, quiet atmosphere, and better mood.
+              </p>
               <a
                 href="https://maps.app.goo.gl/TW7x9LLUQFuWMwoSA"
                 class="store-location__address"
                 target="_blank"
-                rel="nooperner noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Order via WhatsApp"
               >
                 Kapalo Hilalang, Kec. 2 X 11 Kayu Tanam, Kabupaten Padang
@@ -564,19 +597,58 @@
         </div>
       </section>
 
-      <section class="social-media section--compact">
+      <section class="social-media section--compact" id="instagram">
         <div class="container">
           <div class="section-heading">
             <h2 class="section-title">Follow us on Instagram</h2>
-          </div>
-          <div class="social-media__embed">
             <a
               href="https://www.instagram.com/the.jas.mine_"
               target="_blank"
-              rel="nooperner noreferrer"
-              aria-label="Order via WhatsApp"
-              >@the.jas.mine_</a
+              rel="noopener noreferrer"
+              class="instagram-link"
             >
+              @the.jas.mine_
+            </a>
+          </div>
+          <div class="instagram-gallery">
+            <a
+              href="https://www.instagram.com/the.jas.mine_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram-gallery__item"
+            >
+              <img
+                src="images/instagram1.webp"
+                alt="Jasmine drink"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/the.jas.mine_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram-gallery__item"
+            >
+              <img
+                src="images/instagram2.webp"
+                alt="Jasmine matcha"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/the.jas.mine_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram-gallery__item"
+            >
+              <img
+                src="images/instagram3.webp"
+                alt="Jasmine coffee"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -592,7 +664,7 @@
               href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
               class="button button--primary"
               target="_blank"
-              rel="nooperner noreferrer"
+              rel="noopener noreferrer"
               aria-label="Order via WhatsApp"
               >Order via WhatsApp</a
             >
@@ -604,7 +676,29 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <p>Copyright &copy; 2026 ❤️ JASMINE - Fresh drink, better mood</p>
+          <div class="footer__top">
+            <h4 class="footer__brand">JASMINE</h4>
+
+            <p class="footer__tagline">Fresh drink, better mood.</p>
+            <p class="footer__tagline">
+              Koto Hilalang, Sumatera Barat | Open Daily • 12 PM — 06 PM
+            </p>
+          </div>
+
+          <div class="footer__bottom">
+            <p class="footer__copyright">
+              © 2026 Jasmine. All rights reserved.
+            </p>
+
+            <a
+              href="https://www.instagram.com/the.jas.mine_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+            >
+              Instagram
+            </a>
+          </div>
         </div>
       </div>
     </footer>
