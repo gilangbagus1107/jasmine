@@ -22,6 +22,7 @@
     />
   </head>
   <body>
+    <a href="#main-content" class="skip-link"> Skip to content </a>
     <header class="site-header">
       <div class="container">
         <div class="site-header__content">
@@ -39,23 +40,28 @@
               </li>
             </ul>
           </nav>
-          <nav class="mobile-nav">
+          <nav class="mobile-nav" id="mobile-navigation">
             <a href="#menu" class="mobile-nav__link">Menu</a>
             <a href="#location" class="mobile-nav__link">Location</a>
             <a href="#instagram" class="mobile-nav__link">Instagram</a>
           </nav>
           <button
+            type="button"
             class="mobile-nav-toggle"
             aria-label="Open navigation"
             aria-expanded="false"
+            aria-controls="mobile-navigation"
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
           <a
-            href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
+            href="#"
             class="site-header__cta"
+            data-whatsapp-link
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Order
           </a>
@@ -63,7 +69,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero">
         <div class="container">
           <div class="hero__content">
@@ -77,10 +83,11 @@
               <div class="hero__hours">
                 <p>Opening Hours • 12 PM - 06 PM</p>
               </div>
-              <div class="hero__divider"></div>
+              <div class="hero__divider" aria-hidden="true"></div>
               <a
-                href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
+                href="#"
                 class="button button--primary"
+                data-whatsapp-link
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Order via WhatsApp"
@@ -90,7 +97,10 @@
             <div class="hero__media">
               <img
                 src="images/hero.webp"
-                alt="Two signature drinks from Jasmine cafe"
+                alt="Hero Image"
+                width="600"
+                height="750"
+                fetchpriority="high"
               />
             </div>
           </div>
@@ -111,8 +121,10 @@
               <div class="product-card__image">
                 <img
                   src="images/menu1.webp"
-                  alt="Americano Berry iced coffee"
+                  alt="Coffee Chocolate"
                   loading="lazy"
+                  width="600"
+                  height="750"
                 />
               </div>
               <div class="product-card__content">
@@ -128,8 +140,10 @@
               <div class="product-card__image">
                 <img
                   src="images/menu2.webp"
-                  alt="Creamy Matcha"
+                  alt="Blue Lagoon"
                   loading="lazy"
+                  width="600"
+                  height="750"
                 />
               </div>
               <div class="product-card__content">
@@ -145,8 +159,10 @@
               <div class="product-card__image">
                 <img
                   src="images/menu3.webp"
-                  alt="Creamy Coffee Butterscotch"
+                  alt="Tiramisu"
                   loading="lazy"
+                  width="600"
+                  height="750"
                 />
               </div>
               <div class="product-card__content">
@@ -161,7 +177,13 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu4.webp" alt="Mie Padeh" loading="lazy" />
+                <img
+                  src="images/menu4.webp"
+                  alt="Mie Padeh"
+                  loading="lazy"
+                  width="600"
+                  height="750"
+                />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Mie Padeh</h3>
@@ -174,7 +196,13 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu5.webp" alt="Sandwich" loading="lazy" />
+                <img
+                  src="images/menu5.webp"
+                  alt="Sandwich"
+                  loading="lazy"
+                  width="600"
+                  height="750"
+                />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Sandwich</h3>
@@ -187,7 +215,13 @@
 
             <article class="product-card">
               <div class="product-card__image">
-                <img src="images/menu6.webp" alt="Kebab" loading="lazy" />
+                <img
+                  src="images/menu6.webp"
+                  alt="Kebab"
+                  loading="lazy"
+                  width="600"
+                  height="750"
+                />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Kebab</h3>
@@ -211,12 +245,16 @@
 
           <div class="menu-category-grid">
             <article class="menu-category active">
-              <button class="menu-category__trigger">
+              <button
+                class="menu-category__trigger"
+                aria-controls="coffee-menu"
+                aria-expanded="true"
+              >
                 <span>Coffee</span>
                 <span class="menu-category__icon">+</span>
               </button>
 
-              <div class="menu-category__content">
+              <div class="menu-category__content" id="coffee-menu">
                 <ul class="menu-category__list">
                   <li class="menu-item">
                     <div class="menu-item__main">
@@ -285,11 +323,15 @@
             </article>
 
             <article class="menu-category">
-              <button class="menu-category__trigger">
+              <button
+                class="menu-category__trigger"
+                aria-controls="milkboba-menu"
+                aria-expanded="false"
+              >
                 <span>Milk Boba</span>
                 <span class="menu-category__icon">+</span>
               </button>
-              <div class="menu-category__content">
+              <div class="menu-category__content" id="milkboba-menu">
                 <ul class="menu-category__list">
                   <li class="menu-item">
                     <div class="menu-item__main">
@@ -356,11 +398,15 @@
             </article>
 
             <article class="menu-category">
-              <button class="menu-category__trigger">
+              <button
+                class="menu-category__trigger"
+                aria-controls="mocktail-menu"
+                aria-expanded="false"
+              >
                 <span>Mocktail</span>
                 <span class="menu-category__icon">+</span>
               </button>
-              <div class="menu-category__content">
+              <div class="menu-category__content" id="mocktail-menu">
                 <ul class="menu-category__list">
                   <li class="menu-item">
                     <div class="menu-item__main">
@@ -421,11 +467,15 @@
             </article>
 
             <article class="menu-category">
-              <button class="menu-category__trigger">
+              <button
+                class="menu-category__trigger"
+                aria-controls="matcha-menu"
+                aria-expanded="false"
+              >
                 <span>Special Matcha</span>
                 <span class="menu-category__icon">+</span>
               </button>
-              <div class="menu-category__content">
+              <div class="menu-category__content" id="matcha-menu">
                 <ul class="menu-category__list">
                   <li class="menu-item">
                     <div class="menu-item__main">
@@ -456,11 +506,15 @@
             </article>
 
             <article class="menu-category">
-              <button class="menu-category__trigger">
+              <button
+                class="menu-category__trigger"
+                aria-controls="food-menu"
+                aria-expanded="false"
+              >
                 <span>Food</span>
                 <span class="menu-category__icon">+</span>
               </button>
-              <div class="menu-category__content">
+              <div class="menu-category__content" id="food-menu">
                 <ul class="menu-category__list">
                   <li class="menu-item">
                     <div class="menu-item__main">
@@ -542,7 +596,7 @@
                   </li>
                   <li class="menu-item">
                     <div class="menu-item__main">
-                      <span class="menu-item__name">Mie Padeh ( lv. 1/2)</span>
+                      <span class="menu-item__name">Mie Padeh (lv. 1/2)</span>
                       <span class="menu-item__price">14k</span>
                     </div>
                   </li>
@@ -628,7 +682,7 @@
                 class="store-location__address"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Order via WhatsApp"
+                aria-label="Open Jasmine location in Google Maps"
               >
                 Kapalo Hilalang, Kec. 2 X 11 Kayu Tanam, Kabupaten Padang
                 Pariaman, Sumatera Barat
@@ -637,6 +691,8 @@
                 src="images/location.webp"
                 alt="Jasmine cafe location in Koto Hilalang"
                 loading="lazy"
+                width="600"
+                height="750"
               />
             </div>
           </div>
@@ -667,6 +723,8 @@
                 src="images/instagram1.webp"
                 alt="Jasmine drink"
                 loading="lazy"
+                width="600"
+                height="750"
               />
             </a>
 
@@ -680,6 +738,8 @@
                 src="images/instagram2.webp"
                 alt="Jasmine matcha"
                 loading="lazy"
+                width="600"
+                height="750"
               />
             </a>
 
@@ -693,6 +753,8 @@
                 src="images/instagram3.webp"
                 alt="Jasmine coffee"
                 loading="lazy"
+                width="600"
+                height="750"
               />
             </a>
           </div>
@@ -707,8 +769,9 @@
               Order sekarang dan nikmati rasa terbaik dari Jasmine
             </p>
             <a
-              href="https://wa.me/6282285817141?text=Saya%20ingin%20order"
+              href="#"
               class="button button--primary"
+              data-whatsapp-link
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Order via WhatsApp"
