@@ -1,0 +1,74 @@
+.line-mask,
+.site-header__content {
+  overflow: hidden;
+}
+
+.site-header__content a,
+.site-header__content nav,
+.site-header__content button {
+  animation: fadeDown 1.5s ease-out 3s both;
+}
+
+.hero h1 {
+  animation: fadeUp 1s ease-out 0.2s both;
+}
+
+.hero p {
+  animation: fadeRight 0.5s ease-out 0.8s both;
+}
+
+.hero__divider {
+  animation: fadeIn 1s ease 0.8s both;
+}
+
+.hero a {
+  animation: fadeUp 0.8s ease-out 2.5s both;
+}
+
+.hero img {
+  animation: fadeUp 2s ease-out 0.8s both;
+}
+
+/* ===================== */
+/* ANIMATIONS */
+/* ===================== */
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(180%);
+  }
+
+  to {
+    transform: 0;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-150%);
+  }
+
+  to {
+    transform: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: 0;
+  }
+}
