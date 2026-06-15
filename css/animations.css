@@ -1,12 +1,13 @@
 .line-mask,
 .site-header__content {
+  /* border: 1px solid black; */
   overflow: hidden;
 }
 
 .site-header__content a,
 .site-header__content nav,
 .site-header__content button {
-  animation: fadeDown 1.5s ease-out 3s both;
+  animation: fadeDown 0.8s ease-out 1.3s both;
 }
 
 .hero h1 {
@@ -22,11 +23,11 @@
 }
 
 .hero a {
-  animation: fadeUp 0.8s ease-out 2.5s both;
+  animation: fadeUp 0.8s ease-out 1.3s both;
 }
 
 .hero img {
-  animation: fadeUp 2s ease-out 0.8s both;
+  animation: fadeUp 1s ease-out 0.8s both;
 }
 
 /* ===================== */
